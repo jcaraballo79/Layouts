@@ -13,6 +13,13 @@ struct ContentView: View {
     var body: some View {
         
         VStack {
+            Text("Awesome!")
+                .font(.largeTitle)
+                .fontWeight(.black)
+                .foregroundStyle(.white)
+                .padding()
+                .frame(maxWidth: .infinity)
+                .background(.indigo)
             
             Spacer()
             
@@ -24,7 +31,6 @@ struct ContentView: View {
                 .foregroundStyle(.red)
                 .frame(height: 150)
                 .frame(maxWidth: .infinity)
-            //                .border(.orange, width: 2)
                 .padding()
             
             Spacer()
@@ -41,8 +47,11 @@ struct ContentView: View {
                 }
             }
             .buttonStyle(.borderedProminent)
-            //            .border(.purple, width: 5)
             .padding()
+            Rectangle()
+                .frame(height: 0)
+                .background(.indigo)
+            
         }
     }
 }
